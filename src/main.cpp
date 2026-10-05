@@ -200,8 +200,8 @@ static void writeSummaryJson(const std::string& path,
              << "      \"risk_score\": " << std::fixed << std::setprecision(4)
              << results[i].score << ",\n"
              << "      \"category\": \"" << results[i].category << "\",\n"
-             << "      \"debt_to_income\": " << results[i].debtToIncome << "\n"
-             << "      \"credit_utilization\": " << results[i].creditUtilization << "\n"
+             << "      \"debt_to_income\": " << results[i].debtToIncome << ",\n"
+             << "      \"credit_utilization\": " << results[i].creditUtilization << ",\n"
              << "      \"late_payment_rate\": " << results[i].latePaymentRate << "\n"
              << "    }" << (i + 1 < customers.size() ? "," : "") << "\n";
     }
